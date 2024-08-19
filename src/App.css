@@ -1,38 +1,44 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* 
+variables
+bg-[#e2e2e2]
+*/
+.list{
+  list-style: none;
+  color: #e2e2e2;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.section-2-cont{
+  width: clamp(320px,90%,1200px);
+  margin: auto;
+  box-shadow: 3px -3px 8px gray;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.poster-cont{
+  mix-blend-mode: multiply;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.logo{
+  height: 50px;
+  width: 80px;
+  border-radius: 25px;
+  overflow: hidden;
 }
-
-.App-link {
-  color: #61dafb;
+.logo img{
+  height: 100%;
+  width: 100%;
 }
+.bottle-poster:hover{
+  transform: scale(1.2);
+}
+.bottle-poster:hover ~ .poster{
+  animation: slide .9s ease-in-out;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+}
+.footer{
+  background: linear-gradient(to right, #232323,transparent,#232323);
+}
+@media (width<600px){
+  .red-card{
+    flex-direction: column;
   }
 }
