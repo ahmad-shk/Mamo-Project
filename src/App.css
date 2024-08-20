@@ -14,6 +14,14 @@ bg-[#e2e2e2]
   margin: auto;
   box-shadow: 3px -3px 8px gray;
 }
+.endure-btn{
+  box-shadow: 3px -3px 8px gray;
+  transition: .2s;
+  &:active{
+    box-shadow: none;
+    transform: scale(.95);
+  }
+}
 .poster-cont{
   mix-blend-mode: multiply;
 }
