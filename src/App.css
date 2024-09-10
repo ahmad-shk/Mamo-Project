@@ -9,11 +9,6 @@ bg-[#e2e2e2]
   list-style: none;
   color: #e2e2e2;
 }
-.section-2-cont{
-  width: clamp(320px,90%,1200px);
-  margin: auto;
-  box-shadow: 3px -3px 8px gray;
-}
 .endure-btn{
   box-shadow: 3px -3px 8px gray;
   transition: .2s;
@@ -22,8 +17,19 @@ bg-[#e2e2e2]
     transform: scale(.95);
   }
 }
-.poster-cont{
-  mix-blend-mode: multiply;
+.bottle-cont{
+  
+}
+.bottle-bg{
+  mix-blend-mode:screen;
+}
+.bottle{
+  filter: drop-shadow(2px 5px 5px gray);
+  transition: .2s;
+  &:hover{
+    filter: none;
+    transform: scale(1.2) rotate(30deg);
+  }
 }
 .logo{
   height: 50px;
@@ -31,22 +37,52 @@ bg-[#e2e2e2]
   border-radius: 25px;
   overflow: hidden;
 }
-.logo img{
-  height: 100%;
-  width: 100%;
+.name{
+  font-family: monospace; 
+  overflow: hidden;      
+  border-right: 2px solid black; 
+  white-space: nowrap;    
+  margin: 0 auto;         
+  letter-spacing: 2px;    
+  animation: typing 8s steps(40, end) 1s infinite, blink 0.75s step-end infinite;
 }
-.bottle-poster:hover{
-  transform: scale(1.2);
+@keyframes typing {
+  0% { width: 0; }        
+  50% { width: 100%; }     
+  70% { width: 100%; }     
+  100% { width: 0; }       
 }
-.bottle-poster:hover ~ .poster{
-  animation: slide .9s ease-in-out;
-
+@keyframes blink {
+  from, to { border-color: transparent; }
+  50% { border-color: black; }
+}
+.motor{
+  transition: 1s ease-in-out;
+  &:hover{
+    transform: rotate(720deg);
+  }
 }
 .footer{
   background: linear-gradient(to right, #232323,transparent,#232323);
 }
-@media (width<600px){
-  .red-card{
-    flex-direction: column;
+.usageBox,.descriptionBox{
+  animation: appear linear;
+  opacity: 0;
+  transform: scale(0);
+  animation-timeline: view();
+  animation-range: entery 0% cover 10%;
+}
+
+@keyframes appear{
+  0%{
+  
+  }
+  30%{
+    opacity: 1;
+    transform: scale(1);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
   }
 }
