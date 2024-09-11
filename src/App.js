@@ -4,14 +4,14 @@ import UsageBoxes from './Components/UsageBoxes';
 
 function App() {
   return (
-    <div className="body bg-[#252525] text-white">
+    <div className="body bg-[#c9c9c9] text-white">
       <div className='cont'>
 
         {/* //////////////////////////////////////////////////////////////////// */}
         <div className='navbar p-6'>
           <div className='nav flex justify-between items-center'>
             <button className='logo'><img src='./logo.jpeg' /></button>
-            <details className='relative'>
+            <details className='relative md'>
               <summary className='list h-[20px] w-[20px]'>
                 <img src='./bars.svg' className='h-full w-full' />
               </summary>
@@ -26,21 +26,21 @@ function App() {
 
         {/* //////////////////////////////////////////////////////////////////////////// */}
         <div className='text-center pt-12 pb-6 text-[24px] font-bold'><h1>FEATURED PRODUCT</h1></div>
-        <div className='pt-24 pb-2 max-w-[95%] min-w-[300px] m-auto grid grid-cols-[repeat(auto-fit,minmax(300px,45%))] justify-center gap-6 rounded-t-xl -bg-[#ececec] bg-[#343434] pt-6 px-6'>
+        <div className='pt-24 pb-2 max-w-[95%] min-w-[300px] m-auto grid grid-cols-[repeat(auto-fit,minmax(300px,45%))] justify-center gap-6 rounded-t-xl -bg-[#ececec] bg-[#0d67a5] px-6'>
           <div>
             <div className='border border-[#c9c9c9] flex justify-center items-center relative bottle-cont rounded-lg'><img src='./posterLogo.jpeg' className='absolute h-full w-full bottle-bg'/><img src='./bottle.svg' className='bottle'/></div>
             <h1 className='text-center text-[16px] font-semibold py-6 name'>Catagaurd Converter Cleaner</h1>
-            <div className='text-center border p-3 bg-[#252525] border-[#c9c9c9] rounded-lg'><label><strong>Why use it?</strong></label><h3>Over time, carbon deposits and other contaminants can build up in the exhaust system, affecting the converter's ability to reduce harmful emissions. <strong>Catagaurd catalytic converter cleaner</strong> works by breaking down these deposits and cleaning the exhaust passageways, allowing for improved airflow and optimal converter performance. This specialized formula is designed to help maintain and restore the efficiency of a vehicle's catalytic converter.</h3></div>
+            <div className='text-center text-[black] border p-3 bg-[#c9c9c9] border-[#c9c9c9] rounded-lg'><label><strong>Why use it?</strong></label><h3>Over time, carbon deposits and other contaminants can build up in the exhaust system, affecting the converter's ability to reduce harmful emissions. <strong>Catagaurd catalytic converter cleaner</strong> works by breaking down these deposits and cleaning the exhaust passageways, allowing for improved airflow and optimal converter performance. This specialized formula is designed to help maintain and restore the efficiency of a vehicle's catalytic converter.</h3></div>
             <img src='./bgImage1.png' className='mt-4 rounded-lg descriptionBox'/>
           </div>
 
-          <div>
+          <div className='flex flex-col justify-between'>
             <DescriptionBox label={'QUICK CLEAN'} description={'Quickly cleans the harmful chemicals such as: Sulphur, Carbon Phosphorus from the surface of catalytic converter'}/>
             <DescriptionBox label={'RECOVERING'} description={'Recovers the activity of catalytic converter'}/>
             <DescriptionBox label={'EMISSION'} description={'Reduces the vehicles harmful emission'}/>
             <DescriptionBox label={'POWER'} description={'Reduces the fuel consumption and increases power'}/>
             <DescriptionBox label={'CATALYTIC LIFE'} description={'Enhances the tendency of catalytic life'}/>
-            <img src='./bgImage2.png' className='pt-[40px] descriptionBox'/>
+            <img src='./bgImage2.png' className=' rounded-lg descriptionBox'/>
           </div>
         </div>
 
