@@ -1,7 +1,7 @@
-import DescriptionBox from '../Components3/DescriptionBox';
-import UsageBoxes from '../Components3/UsageBoxes';
+import DescriptionBox from '../Components2/DescriptionBox';
+import UsageBoxes from '../Components2/UsageBoxes';
 import './Layout2.css';
-function Layout2() {
+function Layout3() {
   return (
     <div className="body bg-[#c9c9c9] text-white">
       <div className='cont'>
@@ -88,4 +88,4 @@ function Layout2() {
   );
 }
 
-export default Layout2;
+export default Layout3;
