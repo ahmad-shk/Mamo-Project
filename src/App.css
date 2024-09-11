@@ -10,11 +10,12 @@ bg-[#e2e2e2]
   color: #e2e2e2;
 }
 .endure-btn{
-  box-shadow: 3px -3px 8px gray;
+  box-shadow: 3px -3px 8px rgb(0, 0, 0);
   transition: .2s;
   &:active{
     box-shadow: none;
     transform: scale(.95);
+    background-color: #cacaca;
   }
 }
 .bottle-cont{

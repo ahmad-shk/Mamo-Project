@@ -1,6 +1,6 @@
 import DescriptionBox from '../Components2/DescriptionBox';
 import UsageBoxes from '../Components2/UsageBoxes';
-import './Layout1.css';
+import '../App.css';
 
 function Layout1() {
   return (
@@ -15,7 +15,7 @@ function Layout1() {
               <summary className='list h-[20px] w-[20px]'>
                 <img src='./bars.svg' className='h-full w-full' />
               </summary>
-              <ul className='absolute p-[3px] bg-white right-[20%] [&>*]:py-2 [&>*]:px-12 [&>*]:cursor-pointer hover:[&>*]:bg-[#e2e2e2] [&>*]:font-semibold rounded'>
+              <ul className='absolute text-white p-[3px] bg-[#343434] right-[20%] [&>*]:py-2 [&>*]:px-12 [&>*]:cursor-pointer hover:[&>*]:bg-[#252525] [&>*]:font-semibold rounded'>
                 <li className=''>About<span className='pl-1'>us</span></li>
                 <li className=''>FAQs</li>
                 <li>Contact</li>
@@ -26,7 +26,7 @@ function Layout1() {
 
         {/* //////////////////////////////////////////////////////////////////////////// */}
         <div className='text-center pt-12 pb-6 text-[24px] font-bold'><h1>FEATURED PRODUCT</h1></div>
-        <div className='pt-24 pb-2 max-w-[95%] min-w-[300px] m-auto grid grid-cols-[repeat(auto-fit,minmax(300px,45%))] justify-center gap-6 rounded-t-xl -bg-[#ececec] bg-[#343434] pt-6 px-6'>
+        <div className='pt-24 pb-2 max-w-[95%] min-w-[300px] m-auto grid grid-cols-[repeat(auto-fit,minmax(300px,45%))] justify-center gap-6 rounded-t-xl -bg-[#ececec] bg-[#343434] px-6'>
           <div>
             <div className='border border-[#c9c9c9] flex justify-center items-center relative bottle-cont rounded-lg'><img src='./posterLogo.jpeg' className='absolute h-full w-full bottle-bg'/><img src='./bottle.svg' className='bottle'/></div>
             <h1 className='text-center text-[16px] font-semibold py-6 name'>Catagaurd Converter Cleaner</h1>
@@ -34,7 +34,7 @@ function Layout1() {
             <img src='./bgImage1.png' className='mt-4 rounded-lg descriptionBox'/>
           </div>
 
-          <div>
+          <div className='flex flex-col justify-between'>
             <DescriptionBox label={'QUICK CLEAN'} description={'Quickly cleans the harmful chemicals such as: Sulphur, Carbon Phosphorus from the surface of catalytic converter'}/>
             <DescriptionBox label={'RECOVERING'} description={'Recovers the activity of catalytic converter'}/>
             <DescriptionBox label={'EMISSION'} description={'Reduces the vehicles harmful emission'}/>
@@ -46,10 +46,11 @@ function Layout1() {
 
 
         <div className=' max-w-[70%] min-w-[300px] m-auto py-6 flex flex-col gap-6'>
-             <UsageBoxes label={1} usage={'open the bottle'}/>
-             <UsageBoxes label={2} usage={'pour the chemical into converter'}/>
-             <UsageBoxes label={3} usage={'Accelerate the vehicle for 8 minutes'}/>
-             <UsageBoxes label={4} usage={'wash with high pressure water'}/>
+             <UsageBoxes label={1} usage={'Shake well before use'}/>
+             <UsageBoxes label={2} usage={'Pour the chemical in the catalytic converter placed in the silencer'}/>
+             <UsageBoxes label={3} usage={'Wait for 5 tp 7 minutes'}/>
+             <UsageBoxes label={4} usage={'wash it with high pressure water'}/>
+             <UsageBoxes label={5} usage={'Fix silencer and gradually increase the acceletor to 2000 RPM for 2 to 3 minutes'}/>
         </div>
         {/* ///////////////////////////////////////////////////////////////////////////////// */}
         <div className='footer pt-[3px] text-white'>
