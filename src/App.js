@@ -1,12 +1,8 @@
 import './App.css';
-import DescriptionBox from './Components/DescriptionBox';
-import UsageBoxes from './Components/UsageBoxes';
-
 function App() {
   return (
-    <div className="body bg-[#252525] text-white">
+    <div className="body bg-[#e2e2e2]">
       <div className='cont'>
-
         {/* //////////////////////////////////////////////////////////////////// */}
         <div className='navbar p-6'>
           <div className='nav flex justify-between items-center'>
@@ -23,37 +19,31 @@ function App() {
             </details>
           </div>
         </div>
-
         {/* //////////////////////////////////////////////////////////////////////////// */}
-        <div className='text-center pt-12 pb-6 text-[24px] font-bold'><h1>FEATURED PRODUCT</h1></div>
-        <div className='pt-24 pb-2 max-w-[95%] min-w-[300px] m-auto grid grid-cols-[repeat(auto-fit,minmax(300px,45%))] justify-center gap-6 rounded-t-xl -bg-[#ececec] bg-[#343434] pt-6 px-6'>
+        <div className='section-1 pt-12'>
           <div>
-            <div className='border border-[#c9c9c9] flex justify-center items-center relative bottle-cont rounded-lg'><img src='./posterLogo.jpeg' className='absolute h-full w-full bottle-bg'/><img src='./bottle.svg' className='bottle'/></div>
-            <h1 className='text-center text-[16px] font-semibold py-6 name'>Catagaurd Converter Cleaner</h1>
-            <div className='text-center border p-3 bg-[#252525] border-[#c9c9c9] rounded-lg'><label><strong>Why use it?</strong></label><h3>Over time, carbon deposits and other contaminants can build up in the exhaust system, affecting the converter's ability to reduce harmful emissions. <strong>Catagaurd catalytic converter cleaner</strong> works by breaking down these deposits and cleaning the exhaust passageways, allowing for improved airflow and optimal converter performance. This specialized formula is designed to help maintain and restore the efficiency of a vehicle's catalytic converter.</h3></div>
-            <img src='./bgImage1.png' className='mt-4 rounded-lg descriptionBox'/>
+            <div className='w-full flex justify-center'><button className='endure-btn border bg-white px-4 py-2 rounded-full'>Endure</button></div>
+            <div className='text-center font-semibold py-4'><h3>Solution To All Your Problems</h3></div>
           </div>
-
-          <div>
-            <DescriptionBox label={'QUICK CLEAN'} description={'Quickly cleans the harmful chemicals such as: Sulphur, Carbon Phosphorus from the surface of catalytic converter'}/>
-            <DescriptionBox label={'RECOVERING'} description={'Recovers the activity of catalytic converter'}/>
-            <DescriptionBox label={'EMISSION'} description={'Reduces the vehicles harmful emission'}/>
-            <DescriptionBox label={'POWER'} description={'Reduces the fuel consumption and increases power'}/>
-            <DescriptionBox label={'CATALYTIC LIFE'} description={'Enhances the tendency of catalytic life'}/>
-            <img src='./bgImage2.png' className='pt-[40px] descriptionBox'/>
+          <div className='bg-red-600 section-2-cont rounded-t-xl px-2 py-6'>
+            <h3 className='w-full pb-6 font-semibold text-center'>Bottle</h3>
+            <div className='red-card flex'>
+              <div className=' bottle-poster min-w-[200px] max-w-[400px] relative -bg-blue-400 transition-[.2s]'>
+                <img src='./bottle.png' className='' />
+                <div className='poster-cont absolute bottom-[15%] h-[40%] w-[21%] left-[39.4%]  overflow-hidden flex justify-center items-center rounded'>
+                  <img src='./poster.jpeg' className='poster h-full min-w-[220px]' />
+                </div>
+              </div>
+              <div className='bottle-details p-4 flex flex-col justify-center'>
+                <p>Get you stuff clean with new CataGuard Catalytic Converter Cleaner and enjoy the whole new experience of your vehicle</p>
+              </div>
+            </div>
           </div>
         </div>
 
-
-        <div className=' max-w-[70%] min-w-[300px] m-auto py-6 flex flex-col gap-6'>
-             <UsageBoxes label={1} usage={'open the bottle'}/>
-             <UsageBoxes label={2} usage={'pour the chemical into converter'}/>
-             <UsageBoxes label={3} usage={'Accelerate the vehicle for 8 minutes'}/>
-             <UsageBoxes label={4} usage={'wash with high pressure water'}/>
-        </div>
         {/* ///////////////////////////////////////////////////////////////////////////////// */}
-        <div className='footer pt-[3px] text-white'>
-          <div className='footer-cont p-[10%] py-8 bg-[#343434] grid gap-8 justify-center items-center grid-cols-1 md:grid-cols-[repeat(3,1fr)]'>
+        <div className='footer pt-[2px] text-white'>
+          <div className='footer-cont p-[10%] py-8 bg-[#232323] grid gap-8 justify-center items-center grid-cols-1 md:grid-cols-[repeat(3,1fr)]'>
             <div className='foot-section1 w-full -bg-red-50 flex justify-center'>
               <button className='logo w-full'>
                 <img src='./logo.jpeg' />
@@ -74,19 +64,16 @@ function App() {
               <h4 className='font-medium'>About Company</h4>
               <h6 className='text-[13px] text-center'>Madina Chemical Industries Situated In Karachi is the best chemical industry in pakistan</h6>
               <div className='flex justify-between pt-3 w-[260px] [&>*]:w-[30px]'>
-                <img src='./instagram.svg' />
-                <img src='./facebook.svg' />
-                <img src='./twitter.svg' />
-                <img src='./tiktok.svg' />
+                <img src='./instagram.svg'/>
+                <img src='./facebook.svg'/>
+                <img src='./twitter.svg'/>
+                <img src='./tiktok.svg'/>
               </div>
             </div>
           </div>
         </div>
-
-
       </div>
     </div>
   );
 }
-
 export default App;
